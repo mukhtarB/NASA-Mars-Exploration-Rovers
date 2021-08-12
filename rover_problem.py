@@ -167,7 +167,6 @@ if __name__ == '__main__':
 			if planet_grid.split().__len__() == 2 and ',' not in planet_grid:
 				exec(f"{planet_name}_Plateau = Plateau('{planet_name}', '{planet_grid}')")
 				print(f"\n\r--> Plateau created, Name: {planet_name}_Plateau\n\r")
-				print(locals())
 			else:
 				print("Grid should be in the format 'x y' separated by spaces only.")
 
@@ -185,7 +184,6 @@ if __name__ == '__main__':
 			try:
 				locals()[rover_name.__str__()] = rover_name
 				print(f"\n\r--> Rover created, Name: {rover_name.__str__()}")
-				print(f"\n\r--> {rover_name.rover_details()}\n\r")
 			except (ValueError, AttributeError):
 				print('PLEASE INPUT COORDINATES IN PROPER FORMAT --> "x y D" <--, separated by spaces only.', 'x \
 				= x coordinate', 'y = y coordinate', 'D = cardinal point orientation', sep="\n\r")
@@ -198,7 +196,7 @@ if __name__ == '__main__':
 			try:
 				rover_name = locals()[rover_name]
 				output = rover_name.navigate(navigation_directions)
-				print("OUTPUT***********", output)
+				print("OUTPUT == ", output)
 			except KeyError:
 				print(f"**{rover_name} does not exist")
 
