@@ -32,9 +32,8 @@ class Plateau:
 	def plateau_details(self):
 		return f"{self.name} Details --> {self.__dict__}"
 
-	@classmethod
-	def total_num_of_plateau(cls):
-		return cls.__no_of_plateau
+	def total_num_of_plateau(self):
+		return self.__no_of_plateau
 
 	def __repr__(self):
 		return f"Plateau('{self.planet}', '{self.grid_size}'))"
