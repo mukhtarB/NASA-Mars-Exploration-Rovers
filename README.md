@@ -37,7 +37,7 @@ M M R M M R M R R M
 
 
 ## HOW IT WORKS
-This program is implemented using oop concepts to ensure for reusability & organization. Each object `Plateau` and `Rover` are represnted by it's own class.
+This program is implemented using oop concepts to ensure for reusability & organization. Each object `Plateau` and `Rover` are represented by it's own class.
 An insance of the Plateau class takes 2 parameters: the planet & the max-grid size.
 That of the Rover also takes 2 params, one of which is an instance of the plateau object (i.e the particular plateau the rover is to navigate.) and it's spawn position on the aforementioned plateau.
 
